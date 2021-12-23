@@ -52,30 +52,32 @@ Ex7()
 def Ex8():
     player_1 = input("Your Choose (Player 1): ")
     player_2 = input("Your Choose (Player 2): ")
-    if player_1.lower() == "rock":
-        if player_2.lower() == "scissors":
+    player_1 = player_1.lower()
+    player_2 = player_2.lower()
+    if player_1 == "rock":
+        if player_2 == "scissors":
             print("Player 1: You win!\nPlayer 2: You lose!")
-        elif player_2.lower() == "paper":
+        elif player_2 == "paper":
             print("Player 1: You lose!\nPlayer 2: You win!")
-        elif player_2.lower() == "rock":
+        elif player_2 == "rock":
             print("Draw!")
         else:
             print("Your choose unavaiable!")
-    elif player_1.lower() == "scissors":
-        if player_2.lower() == "paper":
+    elif player_1 == "scissors":
+        if player_2 == "paper":
             print("Player 1: You win!\nPlayer 2: You lose!")
-        elif player_2.lower() == "rock":
+        elif player_2 == "rock":
             print("Player 1: You lose!\nPlayer 2: You win!")
-        elif player_2.lower() == "scissors":
+        elif player_2 == "scissors":
             print("Draw!")
         else:
             print("Your choose unavaiable!")
-    elif player_1.lower() == "paper":
-        if player_2.lower() == "rock":
+    elif player_1 == "paper":
+        if player_2 == "rock":
             print("Player 1: You win!\nPlayer 2: You lose!")
-        elif player_2.lower() == "scissors":
+        elif player_2 == "scissors":
             print("Player 1: You lose!\nPlayer 2: You win!")
-        elif player_2.lower() == "paper":
+        elif player_2 == "paper":
             print("Draw!")
         else:
             print("Your choose unavaiable!")
@@ -105,3 +107,57 @@ def Ex9():
         elif input_from_user > 9:
             print("Sorry! Your number is too high!")
 Ex9()
+
+# Ex. 10 --- --- --- --- --- ---
+def Ex10():
+    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+    b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    ### write this in one line.
+    ### use at least one list comprehension.
+    print([i for i in a and b if i in a and b]) # List comprehension.
+Ex10()
+
+# Ex. 11 --- --- --- --- --- ---
+def Ex11():
+    import sys
+    ### import sys lib.
+    prime = int(input("Your number: "))
+    if prime > 1:
+        for i in range(2, prime - 1):
+            if prime % i != 0:
+                continue
+            elif prime % i == 0:
+                sys.exit("The number isn't prime")
+        sys.exit("The number is prime")
+    else:
+        print("The number is prime")
+Ex11()
+
+# Ex. 12 --- --- --- --- --- ---
+def Ex12():
+    a = [5, 10, 15, 20, 25]
+    print(a[0], a[-1])
+Ex12()
+
+# Ex. 13 --- --- --- --- --- ---
+def Ex13():
+    num = int(input("Times: "))
+    fibonacci = [1, 1]
+    i = 1
+    while i < (num - 1):
+        fibonacci.append(fibonacci[i] + fibonacci[i-1])
+        i = i + 1
+    print(fibonacci)
+Ex13()
+
+# Ex. 14 --- --- --- --- --- ---
+def Ex14():
+    a = [1, 2, 3, 3, 4, 2, 1, 5, 2 ,3, 1]
+    a = set(a)
+    print(a)
+Ex14()
+    ### Extra:
+def Extra_Ex14():
+    a = {1, 2, 3}; b = {3, 4, 5}
+    print(a | b, a & b)
+Extra_Ex14()
