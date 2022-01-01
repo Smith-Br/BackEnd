@@ -1,6 +1,4 @@
 # Ex. 3 --- --- --- --- --- ---
-from random import randrange
-
 def Ex3():
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     for num in a:
@@ -202,7 +200,7 @@ def Ex18(number, user_guess):
         else:
             cowbull[0]=+1
     return cowbull
-
+    
 if __name__ == "__main__":
     playing = True
     number = str(random.randint(0, 9999))
@@ -220,9 +218,7 @@ if __name__ == "__main__":
             break
         cowbullcount = Ex18(number, user_guess)
         guesses+=1
-
         print("You have " + str(cowbullcount[0]) + " cows, and " + str(cowbullcount[1]) + " bulls.")
-
         if cowbullcount[1]==4:
             playing = False
             print("You win the game after " + str(guesses) + "! The number was " + str(number))
@@ -230,5 +226,4 @@ if __name__ == "__main__":
         else:
             print("Your guess isn't quite right, try again.")
 Ex18()
-
 # Ex. 20 --- --- --- --- --- ---
