@@ -79,4 +79,16 @@ complex_number = 1 + 1j; print(complex_number) #$ The conclusion we have (1+1j)
 print(complex_number.real, complex_number.imag); print(complex_number.conjugate()) #$ return negative value of the complex_number.
 print((1 - 2j).conjugate())
 
-##^ 
+##^ Complex arithmetic
+def complex_arithmetic():
+    n1 = 1j
+    n2 = 2 + 1j
+    n3 = 3 - 12j
+    print(n1 + n2, n3 / n1, n3 - n1, n3 ** n2 ** n1)
+complex_arithmetic()
+
+#@ Interestingly, although not surprising from a mathematical point of view, int and float objects also have the .real and .imag properties, as well as the .conjugate() method:
+
+number_1 = 3.14156; print(number_1.real, number_1.imag, number_1.conjugate())
+# With int. the .imag always return '0' value.
+
