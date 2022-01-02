@@ -46,6 +46,10 @@ def somethingelse():
     print(str.startswith("The"), str.endswith("Dog"))
 somethingelse()
 
+##! find a string:
+str_var = "smith_br-macpro16"
+print(str_var.find("16"))
+
 ### TODO
     ##? format()	    It’s used to create a formatted string from the template string and the supplied values.
     ##? split()	        Python string split() function is used to split a string into the list of strings based on a delimiter.
