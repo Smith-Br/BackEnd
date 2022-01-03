@@ -91,4 +91,3 @@ complex_arithmetic()
 
 number_1 = 3.14156; print(number_1.real, number_1.imag, number_1.conjugate())
 # With int. the .imag always return '0' value.
-
