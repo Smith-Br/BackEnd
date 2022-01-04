@@ -36,7 +36,7 @@ print(2 ** 4)  # 2^4
 #! float also correct:
 print(2 ** 1.5)
 
-#TODO Math function
+#TODO: Math function
 # round(): ≈.
 # abs(): |x|.
 # pow(): x^a.
