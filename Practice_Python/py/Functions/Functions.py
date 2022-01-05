@@ -17,7 +17,7 @@ print(type(len))    ##$ <class 'builtin_function_or_method>.
 len = 'The quick brown fox jumps over the lazy dog.'
 print(len, type(len))
 
-###! If you tuped in the previous code eg., you no longer have access to the built-in len function in IDLE.
+###! If you typed in the previous code eg., you no longer have access to the built-in len function in IDLE.
 
 ##$ You can get back with the following code:
 
