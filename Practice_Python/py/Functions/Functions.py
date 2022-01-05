@@ -27,3 +27,5 @@ del len
 print(len, type(len))
 
 ###! How Python Executes Functions
+
+##$ The process for excuting a function can be summarized in three steps:

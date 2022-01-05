@@ -294,5 +294,4 @@ if __name__ == "__main__":
             break  # redundant exit
         else:
             print("Your guess isn't quite right, try again.")
-Ex18()
 # Ex. 20 --- --- --- --- --- ---
