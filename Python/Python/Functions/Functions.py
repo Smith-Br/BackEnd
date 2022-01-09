@@ -41,4 +41,17 @@ print_function #$ return nothing.
 
 ##! print() returns a special value called None that indicates the absence of date. None has a type called NoneType:
 
-##! Write Own Function:
+###! Write Own Function:
+
+##? Anatomy of function
+
+#$ Every function has two parts:
+    #^ 1. The function signature defines the name fo the function and any inputs it expects.
+    #^ 2. The function body contains the code that runs every time the function is used.
+
+def something_can_multiply(x, y): #* Function signature.
+    #* Function body.
+    xy = x * y
+    return xy
+something_can_multiply
+
