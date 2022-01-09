@@ -82,7 +82,7 @@ def Ex8():
         elif player_2 == "rock":
             print("Draw!")
         else:
-            print("Your choose unavaiable!")
+            print("Your choose unavailable!")
     elif player_1 == "scissors":
         if player_2 == "paper":
             print("Player 1: You win!\nPlayer 2: You lose!")
@@ -91,7 +91,7 @@ def Ex8():
         elif player_2 == "scissors":
             print("Draw!")
         else:
-            print("Your choose unavaiable!")
+            print("Your choose unavailable!")
     elif player_1 == "paper":
         if player_2 == "rock":
             print("Player 1: You win!\nPlayer 2: You lose!")
@@ -100,9 +100,9 @@ def Ex8():
         elif player_2 == "paper":
             print("Draw!")
         else:
-            print("Your choose unavaiable!")
+            print("Your choose unavailable!")
     else:
-        print("Your choose unavaiable!")
+        print("Your choose unavailable!")
 
 
 Ex8()
@@ -228,9 +228,9 @@ Ex15()
 
 def Ex16():
     import random
-    Stringinpass = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=_+:!@#$%^&*()"
+    String_in_pass = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=_+:!@#$%^&*()"
     passlength = int(input("Length of password you want: "))
-    print("".join(random.sample(Stringinpass, passlength)))
+    print("".join(random.sample(String_in_pass, passlength)))
 
 
 Ex16()

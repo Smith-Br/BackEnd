@@ -54,4 +54,3 @@ def something_can_multiply(x, y): #* Function signature.
     xy = x * y
     return xy
 something_can_multiply
-
