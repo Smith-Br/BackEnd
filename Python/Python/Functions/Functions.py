@@ -28,4 +28,17 @@ print(len, type(len))
 
 ###! How Python Executes Functions
 
-##$ The process for excuting a function can be summarized in three steps:
+##$ The process for executing a function can be summarized in three steps:
+    #^ 1. The function is called, and any arguments are passed to the function as input.
+    #^ 2. The function executes, and some action is performed with the arguments.
+    #^ 3. The function returns, and the original function call is replaced with the return value.    
+
+random_letter_length = len("Smith Brian")
+print(random_letter_length)
+
+print_function = print("Smith Brian")
+print_function #$ return nothing.
+
+##! print() returns a special value called None that indicates the absence of date. None has a type called NoneType:
+
+##! Write Own Function:
