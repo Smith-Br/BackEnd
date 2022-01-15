@@ -51,6 +51,24 @@ print_function #$ return nothing.
 
 def something_can_multiply(x, y): #* Function signature.
     #* Function body.
-    xy = x * y
-    return xy
-something_can_multiply
+    product = x * y
+    return product
+
+    print('Where am I!?')  # In the function body
+
+something_can_multiply = something_can_multiply(1, 2)
+print(something_can_multiply)
+
+print('Where am I!?') # Not in the function body.
+
+#! If print() is indented, then it becomes a part of the function ody even if there is a blank line between print() and the previous line.
+
+#! Function with no return statement
+
+def function_wo_st(name):
+    print(f"hello, {name}!")
+    #? fucntion_wo_st has no return statement, but works just fine!
+    returnvalue = function_wo_st("Smith")
+    return returnvalue
+function_wo_st
+
